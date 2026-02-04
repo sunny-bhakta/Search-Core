@@ -1,0 +1,1 @@
+Updating an index can be append-only with new segments or in-place with rewritten postings.
