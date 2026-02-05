@@ -4,7 +4,7 @@
 |-------|-------------|--------|
 | Search Algorithms | Core search techniques and algorithms (TF-IDF, BM25, Fuzzy, Embeddings, etc.) | [README](01-Search-Algorithms/SEARCH-ALGORITHMS.md) |
 | Search Engine Internals | Inverted index, tokenization, stemming, ranking | [README](02-Search-Engine-Internals/SEARCH-ENGINE_INTERNALS.md) |
-| Data Modeling & Indexing | Document modeling, index design | [README](03-Data-Modeling-and-Indexing/README.md) |
+| Data Modeling & Indexing | Document modeling, index design | [README](03-Data-Modeling-and-Indexing/DATA-MODELING-AND-INDEXING.md) |
 | Scalability & Performance | Sharding, replication, caching, pipelines | [TODO](04-Scalability-and-Performance/README.md) |
 | API & Integration | REST/GraphQL APIs, frontend integration | [README](05-API-and-Integration/README.md) |
 | Observability & Quality | Monitoring, logging, A/B testing | [README](06-Observability-and-Quality/README.md) |
