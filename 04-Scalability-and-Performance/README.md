@@ -2,6 +2,20 @@
 
 A field guide for keeping search clusters fast, stable, and predictable as traffic and data scale.
 
+## Module Cheat Sheet
+| # | Topic | Summary |
+| --- | --- | --- |
+| 01 | [Capacity Planning & Workload Modeling](./01-capacity-planning-workload-modeling/README.md) | Count expected searches/writes so you can size the cluster with headroom. |
+| 02 | [Sharding & Routing Strategy](./02-sharding-routing-strategy/README.md) | Decide how many shards you need and which routing keys keep hotspots in check. |
+| 03 | [Replication & Failover](./03-replication-failover/README.md) | Keep extra copies plus drills so node loss doesn’t drop traffic. |
+| 04 | [Query Performance Tuning](./04-query-performance-tuning/README.md) | Profile slow searches, add caches, and enforce timeouts. |
+| 05 | [Indexing Throughput & Backpressure](./05-indexing-throughput-backpressure/README.md) | Measure ingest speed and apply brakes before the cluster tips over. |
+| 06 | [Storage Layout & Compression](./06-storage-layout-compression/README.md) | Pick layouts/codecs to stretch storage without crushing CPU. |
+| 07 | [Autoscaling & Elastic Capacity](./07-autoscaling-elastic-capacity/README.md) | Automatically add/remove nodes based on signal thresholds. |
+| 08 | [Benchmarking & Load Testing](./08-benchmarking-load-testing/README.md) | Replay realistic traffic in test clusters to find regressions early. |
+| 09 | [Observability & Alerting Hooks](./09-observability-alerting-hooks/README.md) | Instrument metrics/alerts so incidents are obvious and actionable. |
+| 10 | [Cost Optimization](./10-cost-optimization/README.md) | Track spend per node/tier and trim safely without hurting SLAs. |
+
 ## 1. Capacity Planning & Workload Modeling
 - Track QPS, payload size, and latency SLOs for both search and indexing traffic.
 - Build load mix models (read/write ratio, heavy aggregations, autocomplete, etc.).
