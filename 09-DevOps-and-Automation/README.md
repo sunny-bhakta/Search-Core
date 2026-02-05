@@ -2,52 +2,62 @@
 
 Patterns to keep search infrastructure reproducible, observable, and low-drag for operators.
 
-## 1. Infrastructure as Code
+## 1. [Infrastructure as Code](./Infrastructure-as-Code.md)
+_Path: `/09-DevOps-and-Automation/Infrastructure-as-Code.md`_
 - Model clusters, networks, secrets, and pipelines with Terraform/Pulumi/etc.
 - Enforce code review, policy-as-code, and drift detection on IaC repos.
 - Parameterize modules for multi-environment reuse.
 
 ## 2. Environment Strategy
+_Path: `/09-DevOps-and-Automation/Environment-Strategy.md`_
 - Define dev/stage/prod parity, data anonymization, and refresh cadence.
 - Automate sandbox creation for experiments or customer recreations.
 - Track environment-specific overrides (instance size, plugin set) explicitly.
 
 ## 3. CI/CD Pipelines
+_Path: `/09-DevOps-and-Automation/CI-CD-Pipelines.md`_
 - Build pipelines for schema migrations, analyzer updates, and code deployments.
 - Incorporate tests: unit, integration, synthetic load, and canary verifications.
 - Support progressive delivery (blue/green, rolling, feature flags).
 
 ## 4. Release Management
+_Path: `/09-DevOps-and-Automation/Release-Management.md`_
 - Version infrastructure artifacts and publish release notes.
 - Automate rollback procedures and snapshot restores.
 - Maintain change calendars and approval workflows for high-risk windows.
 
 ## 5. Configuration Management
+_Path: `/09-DevOps-and-Automation/Configuration-Management.md`_
 - Store cluster settings, feature flags, and runtime configs centrally.
 - Audit changes and enforce validation before rollout.
 - Provide self-service config toggles with guardrails.
 
 ## 6. Secrets & Credential Automation
+_Path: `/09-DevOps-and-Automation/Secrets-and-Credential-Automation.md`_
 - Rotate service credentials, API keys, and certificates on schedules.
 - Integrate with secret managers and short-lived tokens.
 - Monitor for drift or hard-coded secrets in repos.
 
 ## 7. Monitoring as Code
+_Path: `/09-DevOps-and-Automation/Monitoring-as-Code.md`_
 - Codify dashboards, alerts, and SLOs to keep environments consistent.
 - Version-control alert routing, severity, and suppression rules.
 - Test alerting logic in staging before production rollout.
 
 ## 8. Automated Maintenance Jobs
+_Path: `/09-DevOps-and-Automation/Automated-Maintenance-Jobs.md`_
 - Schedule segment optimization, snapshot cleanup, and index rollovers.
 - Track job success metrics and auto-remediate failures when safe.
 - Provide manual override tooling for urgent interventions.
 
 ## 9. Chaos & Resilience Testing
+_Path: `/09-DevOps-and-Automation/Chaos-and-Resilience-Testing.md`_
 - Inject failures (node loss, disk saturation, network partitions) via tooling.
 - Automate game-days with scoring and follow-up actions.
 - Ensure learnings feed back into runbooks and alerts.
 
 ## 10. Cost & Resource Automation
+_Path: `/09-DevOps-and-Automation/Cost-and-Resource-Automation.md`_
 - Tag resources for cost attribution and anomaly detection.
 - Auto-scale non-critical clusters when idle; hibernate dev environments off-hours.
 - Integrate budgeting alerts into ChatOps or ticketing systems.
